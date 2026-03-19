@@ -1,0 +1,110 @@
+.resumeSection {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 8rem 0;
+}
+
+.resumeContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.textContent .section-title {
+  color: var(--text-light);
+}
+
+.resumeDescription {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2rem;
+}
+
+.downloadGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.downloadCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.downloadCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--accent-primary);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+  transform-origin: bottom;
+}
+
+.downloadCard:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(10px);
+}
+
+.downloadCard:hover::before {
+  transform: scaleY(1);
+}
+
+.iconWrapper {
+  background: rgba(230, 81, 0, 0.15);
+  color: var(--accent-primary);
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.cardInfo {
+  flex-grow: 1;
+}
+
+.cardInfo h3 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  margin-bottom: 0.2rem;
+  color: var(--text-light);
+}
+
+.cardInfo p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.downloadIcon {
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.3s ease;
+}
+
+.downloadCard:hover .downloadIcon {
+  color: var(--accent-primary);
+}
+
+@media (max-width: 992px) {
+  .resumeContainer {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

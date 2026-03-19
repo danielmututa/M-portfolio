@@ -1,0 +1,76 @@
+.skillsSection {
+  background-color: var(--bg-primary);
+  overflow: hidden;
+  padding: 8rem 0;
+}
+
+.header {
+  text-align: center;
+}
+
+.marqueeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2rem;
+  /* Add subtle gradient fades on the edges for a pro look */
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marqueeTrack {
+  display: flex;
+  width: max-content;
+}
+
+.marqueeContent {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0 0.75rem; /* half of gap to make duplicates seamless */
+}
+
+.skillPill {
+  font-family: var(--font-sans);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+  padding: 1rem 3rem;
+  border-radius: 100px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0,0,0,0.05);
+  white-space: nowrap;
+  transition: all 0.4s ease;
+  cursor: default;
+}
+
+.pillAccent {
+  color: var(--text-light);
+  background: var(--bg-dark);
+}
+
+.skillPill:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(230, 81, 0, 0.15);
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+.pillAccent:hover {
+  background: var(--accent-primary);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .skillPill {
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+  }
+}
