@@ -30,13 +30,13 @@ const Resume = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <a href="#" className={styles.downloadCard}>
+            <a href="/Daniel Mutandwa Mututa CV (4.2).pdf" download="Daniel_Mututa_CV.pdf" className={styles.downloadCard}>
               <div className={styles.iconWrapper}>
                 <FileText size={28} />
               </div>
               <div className={styles.cardInfo}>
                 <h3>Curriculum Vitae</h3>
-                <p>PDF, 2.4 MB</p>
+                <p>PDF</p>
               </div>
               <div className={styles.downloadIcon}>
                 <Download size={20} />

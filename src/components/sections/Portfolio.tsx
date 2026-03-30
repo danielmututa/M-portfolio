@@ -4,18 +4,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 import styles from './Portfolio.module.css';
 
 const projects = [
-  { id: 1, title: "Artemis & Artemis Rebrand", category: "Brand Strategy", image: "https://images.unsplash.com/photo-1600132806608-231446b2e7af?q=80&w=800&auto=format&fit=crop" },
-  { id: 2, title: "Eco Fintech Platform", category: "Product Design", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" },
-  { id: 3, title: "Ableton Springs App", category: "Mobile Design", image: "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?q=80&w=800&auto=format&fit=crop" },
-  { id: 4, title: "Cassie & Henry Event", category: "Typography / Print", image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop" },
-  { id: 5, title: "Procode Dashboard", category: "UI/UX Architecture", image: "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=800&auto=format&fit=crop" },
-  { id: 6, title: "Algebra Tech Portal", category: "Full Stack Development", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" },
-  { id: 7, title: "Econet 5G Campaign", category: "Digital Marketing", image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800&auto=format&fit=crop" },
-  { id: 8, title: "Swift Financial App", category: "Fintech Mobile", image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?q=80&w=800&auto=format&fit=crop" },
-  { id: 9, title: "Organic Essence", category: "E-Commerce", image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=800&auto=format&fit=crop" },
-  { id: 10, title: "Lunar Architecture", category: "Web Design", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop" },
-  { id: 11, title: "Neo Banking App", category: "UI/UX Prototyping", image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800&auto=format&fit=crop" },
-  { id: 12, title: "Swiftmobiles Showcase", category: "Interactive Web", image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800&auto=format&fit=crop" }
+  { id: 1, title: "Multimart Online Shop", category: "E-commerce Platform", image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=800&auto=format&fit=crop", description: "Multimart is a user-friendly e-commerce platform built with React and TailwindCSS, designed to make online shopping effortless. Browse products, add to cart, purchase securely with integrated payment gateways, and track orders in real time.", link: "https://mmshop.co.zw", actionType: "View Website" },
+  { id: 2, title: "OMINIVIEW", category: "Telecommunications & Energy", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop", description: "Introducing OMINIVIEW! I've built a cutting-edge platform for telecommunications, solar energy, and electronics repair using React, Node.js, Express, and MongoDB. It streamlines operations, manages customer data, and provides real-time analytics for better decision-making.", link: "https://ominiview.netlify.app/", actionType: "Comming Soon" },
+  { id: 3, title: "ASTROMOBILES", category: "Mobile Enterprise", image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800&auto=format&fit=crop", description: "Astro mobiles are a brand of smartphones and mobile devices, primarily associated with V3 Mobile and Mobicel in certain regions. In Zimbabwe, Astro Mobile is actively involved in providing affordable smartphones and mobile solutions to the local market.", link: "https://www.astromobile.io/", actionType: "View Website" },
+  { id: 4, title: "ZIMNEXT-SOLUTIONS", category: "Tech Solutions", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop", description: "Zimnext Solutions is a Zimbabwe-based company that offers innovative web development, digital marketing, and tech solutions tailored to local and international business needs, driving growth and digital transformation.", link: "https://www.zimnextsolutions.co.zw/", actionType: "View Website" },
+  { id: 5, title: "BOOTSTRAP Portfolio", category: "Web Development", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop", description: "Highlighting my web development proficiency with HTML, CSS, and JavaScript, focusing on responsive layouts, clean code, and engaging user interactions. Developed it in the first month of 2024 without AI, back when I was not able to configure full sites.", link: "https://danielmututa.github.io/Bootstrape-portfolio/", actionType: "View Website" },
+  { id: 6, title: "PREPAID LOCK UP", category: "Security Application", image: "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?q=80&w=800&auto=format&fit=crop", description: "Still developing a secure Prepaid Lock Up feature for smartphones, designed to protect your device and data. The system will allow you to lock your device remotely and manage access securely.", link: "#", actionType: "Download app" },
+  { id: 7, title: "STRATEGIC BUILDERS", category: "Construction Firm", image: "https://images.unsplash.com/photo-1600132806608-231446b2e7af?q=80&w=800&auto=format&fit=crop", description: "Showcasing the Strategic Builders company, a construction firm with over 10 years of experience in residential, commercial, and renovation projects. Includes project galleries, service details, and client testimonials.", link: "https://www.strategic-builders.co.zw/", actionType: "View Website" },
+  { id: 8, title: "PINTEL", category: "Restaurant Application", image: "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=800&auto=format&fit=crop", description: "Pintel is an intuitive restaurant application where users can browse menus, book tables, and manage orders seamlessly. Enhances the dining experience with full-featured reservation and ordering capabilities.", link: "https://expo.dev/accounts/mututadaniel/projects/FoodApplication/builds/99a7bd60-0fd8-4a61-88e2-cec1614ea9be", actionType: "Download app" }
 ];
 
 const Portfolio = () => {
@@ -69,12 +65,17 @@ const Portfolio = () => {
                 <div className={styles.imageWrapper}>
                   <img src={project.image} alt={project.title} className={styles.projectImage} />
                   <div className={styles.overlay}>
-                    <Link to={`/project/${project.id}`} className={styles.viewBtn}>View Case Study</Link>
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.viewBtn}>
+                      {project.actionType}
+                    </a>
                   </div>
                 </div>
                 <div className={styles.projectInfo}>
                   <p className={styles.projectCategory}>{project.category}</p>
                   <h3 className={styles.projectTitle}>{project.title}</h3>
+                  <p className={styles.projectDescription} style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginTop: '0.5rem', lineHeight: '1.5' }}>
+                    {project.description}
+                  </p>
                 </div>
               </motion.div>
             ))}

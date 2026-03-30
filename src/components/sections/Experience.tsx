@@ -5,38 +5,31 @@ import styles from './Experience.module.css';
 const experiences = [
   {
     id: 1,
-    company: "Procode Platform",
-    role: "Frontend Designer",
-    period: "2019 - 2020",
-    description: "Started my journey focused on creating beautiful, responsive frontend interfaces and establishing core design systems."
+    company: "Microsoft Learn",
+    role: "Software Engineer (Badges)",
+    period: "2025 - Present",
+    description: "Earned several official badges from Microsoft, demonstrating commitment to continuous learning and validating foundational/practical knowledge in cloud computing."
   },
   {
     id: 2,
-    company: "Algebra Technologies",
-    role: "Full Stack Developer",
-    period: "2020 - 2021",
-    description: "Expanded my expertise into full-stack development, bridging the gap between stunning UI and robust backend architecture."
+    company: "Procode Platform",
+    role: "Frontend Developer",
+    period: "Mar 2025 - May 2025",
+    description: "Designed and integrated Caserover, an AI-powered web solution for lawyers using React, TypeScript, TailwindCSS, and Node.js. Used Zod for validation and processed 5,000+ legal documents via Python3 scraping."
   },
   {
     id: 3,
-    company: "Econet",
-    role: "Software Engineer",
-    period: "2021 - 2022",
-    description: "Worked on high-scale telecommunication applications, optimizing performance and delivering critical features to millions of users."
+    company: "Algebra Technologies",
+    role: "Full Stack Developer",
+    period: "Oct 2024 - Present",
+    description: "Developed Android apps using Java and Kotlin in Android Studio. Created websites and provided technical support including email management, PC troubleshooting, and Windows installation."
   },
   {
     id: 4,
-    company: "Swift",
-    role: "Senior Developer",
-    period: "2022 - 2023",
-    description: "Led development teams to build complex financial applications, ensuring security, reliability, and an intuitive user experience."
-  },
-  {
-    id: 5,
-    company: "Swiftmobiles",
-    role: "Lead Engineer / Designer",
-    period: "Present",
-    description: "Currently leading product design and engineering, shaping the future of mobile experiences with king-level aesthetics."
+    company: "Freelance",
+    role: "Web Developer",
+    period: "Recent",
+    description: "Developed strategic-builders.co.zw for a company with 10 years of experience, delivering a robust digital solution."
   }
 ];
 

@@ -82,8 +82,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.4 }}
         >
-          Visual and<br/>
-          <span className={styles.italic}>Product designer</span>
+          <span className={styles.italic}>Fullstack Developer</span>
         </motion.h1>
         
         <motion.p 
