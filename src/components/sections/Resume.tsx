@@ -43,26 +43,26 @@ const Resume = () => {
               </div>
             </a>
 
-            <a href="#" className={styles.downloadCard}>
+            <a href="/Describe cloud computing.pdf" download="Cloud_Computing_Badge.pdf" className={styles.downloadCard}>
               <div className={styles.iconWrapper}>
-                <FileText size={28} />
+                <Award size={28} />
               </div>
               <div className={styles.cardInfo}>
-                <h3>Motivational Letter</h3>
-                <p>PDF, 1.1 MB</p>
+                <h3>Microsoft Badge: Cloud Computing</h3>
+                <p>PDF</p>
               </div>
               <div className={styles.downloadIcon}>
                 <Download size={20} />
               </div>
             </a>
 
-            <a href="#" className={styles.downloadCard}>
+            <a href="/Describe the benefits of using cloud services.pdf" download="Cloud_Services_Badge.pdf" className={styles.downloadCard}>
               <div className={styles.iconWrapper}>
                 <Award size={28} />
               </div>
               <div className={styles.cardInfo}>
-                <h3>Certificates & Awards</h3>
-                <p>ZIP, 15.2 MB</p>
+                <h3>Microsoft Badge: Cloud Services</h3>
+                <p>PDF</p>
               </div>
               <div className={styles.downloadIcon}>
                 <Download size={20} />
