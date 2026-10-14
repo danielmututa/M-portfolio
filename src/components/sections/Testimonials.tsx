@@ -4,21 +4,21 @@ import styles from './Testimonials.module.css';
 const testimonials = [
   {
     id: 1,
-    client: "Sarah Jenkins",
-    role: "CEO, EcoFin",
-    text: "Daniel completely transformed our brand identity. The attention to detail and ability to translate our vision into a stunning visual experience was unparalleled. Highly recommended for any startup looking to stand out."
+    client: "Director",
+    role: "Jekob Creations (Pvt) Ltd - Fastbunny",
+    text: "Daniel built Fastbunny from the ground up and delivered a fast, reliable book marketplace. He understood what our readers and authors needed and turned it into a smooth, easy-to-use platform."
   },
   {
     id: 2,
-    client: "Marcus Chen",
-    role: "Founder, Ableton Springs",
-    text: "Working with Daniel was a breeze. He brought our app to life with intuitive design and beautiful micro-interactions. Our user engagement increased by 40% after the redesign."
+    client: "Naison Marufu",
+    role: "Accerstus",
+    text: "Daniel built our website with real care for detail. It looks professional, loads fast, and represents our digital marketing brand exactly the way we wanted."
   },
   {
     id: 3,
-    client: "Elena Rodriguez",
-    role: "Creative Director",
-    text: "A true master of typography and layout. Daniel's work on our event branding was elegant, sophisticated, and exactly what we needed to elevate our presence."
+    client: "Tafadzwa Mhulanga",
+    role: "Taffy Graphics Design",
+    text: "Daniel delivered a clean, modern website that shows off our graphic design work beautifully. He was quick, professional, and easy to work with."
   }
 ];
 

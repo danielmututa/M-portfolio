@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
-  align-items: center;
+  align-items: start;
 }
 
 .textContent .section-title {
@@ -22,20 +22,65 @@
   margin-bottom: 2rem;
 }
 
+/* ── Certificates column (right side) ── */
+.certsColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* ── Search ── */
+.searchWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1rem;
+  color: rgba(255, 255, 255, 0.4);
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.85rem 1rem 0.85rem 2.6rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.searchInput:focus {
+  border-color: var(--accent-primary);
+  background: rgba(255, 255, 255, 0.09);
+}
+
+/* ── Download / Certificate Cards ── */
 .downloadGrid {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .downloadCard {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
-  padding: 1.5rem 2rem;
+  padding: 1.2rem 1.5rem;
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  text-decoration: none;
+  color: var(--text-light);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -56,7 +101,7 @@
 
 .downloadCard:hover {
   background: rgba(255, 255, 255, 0.1);
-  transform: translateX(10px);
+  transform: translateX(8px);
 }
 
 .downloadCard:hover::before {
@@ -66,8 +111,9 @@
 .iconWrapper {
   background: rgba(230, 81, 0, 0.15);
   color: var(--accent-primary);
-  width: 56px;
-  height: 56px;
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,17 +122,21 @@
 
 .cardInfo {
   flex-grow: 1;
+  min-width: 0;
 }
 
 .cardInfo h3 {
   font-family: var(--font-serif);
-  font-size: 1.3rem;
+  font-size: 1.05rem;
   margin-bottom: 0.2rem;
   color: var(--text-light);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cardInfo p {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.5);
   font-family: var(--font-sans);
   text-transform: uppercase;
@@ -96,12 +146,64 @@
 .downloadIcon {
   color: rgba(255, 255, 255, 0.5);
   transition: color 0.3s ease;
+  flex-shrink: 0;
 }
 
 .downloadCard:hover .downloadIcon {
   color: var(--accent-primary);
 }
 
+/* ── No results ── */
+.noResults {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.95rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* ── Pagination ── */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.pageBtn {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 0.6rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.pageBtn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--text-light);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.pageBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.pageBtnActive {
+  background: var(--accent-primary) !important;
+  border-color: var(--accent-primary) !important;
+  color: #fff !important;
+}
+
+/* ── Responsive ── */
 @media (max-width: 992px) {
   .resumeContainer {
     grid-template-columns: 1fr;
