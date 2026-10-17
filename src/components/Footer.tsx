@@ -18,8 +18,8 @@ const Footer = () => {
           </div>
           <div className={styles.socialLinks}>
             <a href="https://www.linkedin.com/in/daniel-mututa-7483032aa" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://github.com/mututadaniel862" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://github.com/danielmututa" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://github.com/mututadaniel862" target="_blank" rel="noopener noreferrer">GitHub862</a>
+            <a href="https://github.com/danielmututa" target="_blank" rel="noopener noreferrer">GitHub54</a>
           </div>
           <div className={styles.copyright}>
             © {new Date().getFullYear()} Daniel. All rights reserved.
